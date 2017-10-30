@@ -74,13 +74,13 @@ public class IndexController {
 		return resp;
 	}
 
-//	@GetMapping("passenger/login")
-//	public @ResponseBody Passenger getPassengerLogin(@RequestParam String username, @RequestParam String password) {
-//		RestTemplate restTemplate = new RestTemplate();
-//		Passenger passenger = restTemplate.getForObject(API_PASSENGERS + "/login?username=" + username + "&password=" + password,
-//				Passenger.class);
-//		return passenger;
-//	}
+	@GetMapping("passenger/login")
+	public @ResponseBody Passenger getPassengerLogin(@RequestParam String username, @RequestParam String password) {
+		RestTemplate restTemplate = new RestTemplate();
+		Passenger passenger = restTemplate.getForObject(API_PASSENGERS + "/login?username=" + username + "&password=" + password,
+				Passenger.class);
+		return passenger;
+	}
 //
 //	@GetMapping("passenger/signup")
 //	public @ResponseBody Passenger getPassengerSignUp(@RequestParam String username, @RequestParam String password) {
