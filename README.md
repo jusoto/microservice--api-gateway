@@ -1,4 +1,5 @@
 # API Gateway Micro Service
+![alt text](https://travis-ci.org/AITestingOrg/apigateway.svg?branch=master "Build Status")
 
 This Micro Service is the Communication Gateway between the client Applications (Web and Mobile) and the microservices.
 
